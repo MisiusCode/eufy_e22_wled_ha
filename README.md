@@ -4,7 +4,7 @@ Replace the cloud-only eufy control unit with a D1 Mini running [WLED](https://k
 
 The whole controller is about €10 of parts: a D1 Mini, a 74HCT125 buffer chip, a 36 V → 5 V buck module and a few passives. The original eufy power adapter and light strings are reused unchanged.
 
-If this guide helps you, [buy me a coffee on Ko-fi](https://ko-fi.com/nerijuscode) ☕
+The story behind the build: [I freed my eufy E22 outdoor lights from the cloud](https://ko-fi.com/post/I-freed-my-eufy-E22-outdoor-lights-from-the-cloud-U5N729C9U9). If this guide helps you, [buy me a coffee on Ko-fi](https://ko-fi.com/nerijuscode) ☕
 
 > [!WARNING]
 > DIY project, at your own risk. Opening or replacing the control unit voids the eufy warranty. The strings run on 36 V DC: not dangerous to touch, but it destroys a D1 Mini instantly if it reaches a GPIO pin.
@@ -253,7 +253,7 @@ The blue bidirectional level-shifter boards use weak 10 kΩ pull-ups and are too
 
 ## Support
 
-Questions or problems? [Open an issue](https://github.com/MisiusCode/eufy_e22_wled_ha/issues). If this saved you a few evenings, [a coffee on Ko-fi](https://ko-fi.com/nerijuscode) is much appreciated.
+Questions or problems? [Open an issue](https://github.com/MisiusCode/eufy_e22_wled_ha/issues). If this saved you a few evenings, [a coffee on Ko-fi](https://ko-fi.com/nerijuscode) is much appreciated. Read the [project post on Ko-fi](https://ko-fi.com/post/I-freed-my-eufy-E22-outdoor-lights-from-the-cloud-U5N729C9U9) for the story behind it.
 
 ## References
 
