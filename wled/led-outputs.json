@@ -1,0 +1,11 @@
+{
+  "hw": {
+    "led": {
+      "maxpwr": 0,
+      "ins": [
+        { "type": 32, "pin": [5], "start": 0,  "len": 10, "order": 1, "rev": false, "skip": 0, "rgbwm": 0 },
+        { "type": 32, "pin": [3], "start": 10, "len": 10, "order": 1, "rev": false, "skip": 0, "rgbwm": 0 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+# Path lights on motion, after dark.
+# Paste into Settings -> Automations -> Create -> Edit in YAML.
+# Replace the three entity IDs with your own.
+alias: E22 path lights on motion
+mode: restart            # every new motion restarts the 2-minute timer
+triggers:
+  - trigger: state
+    entity_id: binary_sensor.outdoor_motion_occupancy
+    to: "on"
+conditions:
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+actions:
+  - action: light.turn_on
+    target:
+      entity_id:
+        - light.e22_strip_1
+        - light.e22_strip_2
+    data:
+      brightness_pct: 100
+      color_temp_kelvin: 3000
+  - wait_for_trigger:
+      - trigger: state
+        entity_id: binary_sensor.outdoor_motion_occupancy
+        to: "off"
+        for: "00:02:00"
+  - action: light.turn_off
+    target:
+      entity_id:
+        - light.e22_strip_1
+        - light.e22_strip_2
